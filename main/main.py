@@ -8,14 +8,7 @@ from pydub.silence import split_on_silence
 
 def make_window(theme):
     sg.theme(theme)
-    menu_def = [['&Application', ['E&xit']],
-                ['&Help', ['&About']]]
     right_click_menu_def = [[], ['Edit Me', 'Versions', 'Nothing', 'More Nothing', 'Exit']]
-    graph_right_click_menu_def = [[], ['Erase', 'Draw Line', 'Draw', ['Circle', 'Rectangle', 'Image'], 'Exit']]
-
-    # Table Data
-    data = [["John", 10], ["Jen", 5]]
-    headings = ["Name", "Score"]
 
     popup_layout = [[sg.Text("Choose audio to transcribe")],
                     [sg.Button("Open File")],
